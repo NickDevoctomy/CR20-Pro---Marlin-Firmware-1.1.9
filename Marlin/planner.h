@@ -235,7 +235,8 @@ class Planner {
         static matrix_3x3 bed_level_matrix; // Transform to compensate for bed level
       #endif
       #if ENABLED(ENABLE_LEVELING_FADE_HEIGHT)
-        static float z_fade_height, inverse_z_fade_height;
+        static float z_fade_height;
+		static float inverse_z_fade_height;
       #endif
     #else
       static constexpr bool leveling_active = false;
